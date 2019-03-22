@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Calificacionycomentario} from "./calificacionycomentario";
 
 @Component({
   selector: 'app-calificacionycomentario-list',
@@ -11,5 +12,9 @@ export class CalificacionycomentarioListComponent implements OnInit {
 
   ngOnInit() {
   }
+
+calificacionesycomentarios: Calificacionycomentario[] = [
+new Calificacionycomentario (1,5,"bien"),
+new Calificacionycomentario(2,1,"mal")];
 
 }

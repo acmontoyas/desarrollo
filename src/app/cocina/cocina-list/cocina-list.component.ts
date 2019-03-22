@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Cocina} from "./cocina";
 
 @Component({
   selector: 'app-cocina-list',
@@ -11,5 +12,9 @@ export class CocinaListComponent implements OnInit {
 
   ngOnInit() {
   }
+
+cocinas: Cocina[] = [new Cocina (1,"aquí"),new Cocina(2,"allá"),
+new Cocina(3,"por acá")];
+
 
 }
