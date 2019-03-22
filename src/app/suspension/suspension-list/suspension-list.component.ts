@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Suspension} from "./suspension";
 
 @Component({
   selector: 'app-suspension-list',
@@ -11,5 +12,7 @@ export class SuspensionListComponent implements OnInit {
 
   ngOnInit() {
   }
+suspensiones: Suspension[] = [new Suspension(1,true,"x",5), new Suspension(2,false, "y",3)];
+
 
 }
