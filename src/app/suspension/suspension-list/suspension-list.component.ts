@@ -12,7 +12,9 @@ export class SuspensionListComponent implements OnInit {
 
   ngOnInit() {
   }
-suspensiones: Suspension[] = [new Suspension(1,true,"x",5), new Suspension(2,false, "y",3)];
+suspensiones: Suspension[] = [
+new Suspension(1,true,"x",5), 
+new Suspension(2,false,"y",3)];
 
 
 }
