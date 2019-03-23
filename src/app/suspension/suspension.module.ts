@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuspensionListComponent } from './suspension-list/suspension-list.component';
+import { SuspensionService } from './suspension.service';
 
 
 @NgModule({
@@ -8,6 +9,7 @@ import { SuspensionListComponent } from './suspension-list/suspension-list.compo
     CommonModule
   ],
   declarations: [SuspensionListComponent],
-  exports: [SuspensionListComponent]
+  exports: [SuspensionListComponent],
+  providers: [SuspensionService]
 })
 export class SuspensionModule { }

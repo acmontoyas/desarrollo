@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "vigente": true,
+    "comentarios": "todo va bien",
+    "numeroDias": 4
+
+  },
+
+  {
+    "id": 2,
+    "vigente": false,
+    "comentarios": "sin novedades",
+    "numeroDias": 2
+
+  },
+
+  {
+    "id": 3,
+    "vigente": true,
+    "comentarios": "tengo hambre",
+    "numeroDias": 3
+
+  }
+]
