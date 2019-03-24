@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {Suspension} from "./suspension";
 import {SuspensionService} from "../suspension.service";
 
-
-
 @Component({
   selector: 'app-suspension-list',
   templateUrl: './suspension-list.component.html',
@@ -18,8 +16,6 @@ suspensiones: Suspension[];
 getSuspensiones(): void{
 this.suspensionService.getSuspensiones().subscribe(susp => this.suspensiones = susp);
 }
-
-
 
 ngOnInit() {
   this.getSuspensiones();

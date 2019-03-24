@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Cocina} from "./cocina";
+import {CocinaService} from "../cocina.service";
 
 @Component({
   selector: 'app-cocina-list',
@@ -8,13 +9,17 @@ import {Cocina} from "./cocina";
 })
 export class CocinaListComponent implements OnInit {
 
-  constructor() { }
+constructor(private cocinaService:CocinaService) { }
+
+cocinas: Cocina[];
+
+getCocinas(): void{
+this.cocinaService.getCocinas().subscribe(c => this.cocinas = c);
+}
 
   ngOnInit() {
+    this.getCocinas;
   }
-
-cocinas: Cocina[] = [new Cocina (1,"aquí"),new Cocina(2,"allá"),
-new Cocina(3,"por acá")];
 
 
 }

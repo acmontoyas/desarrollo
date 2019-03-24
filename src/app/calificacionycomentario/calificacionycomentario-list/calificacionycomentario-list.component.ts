@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Calificacionycomentario} from "./calificacionycomentario";
+import {CalificacionycomentarioService } from "../calificacionycomentario.service";
 
 @Component({
   selector: 'app-calificacionycomentario-list',
@@ -8,13 +9,17 @@ import {Calificacionycomentario} from "./calificacionycomentario";
 })
 export class CalificacionycomentarioListComponent implements OnInit {
 
-  constructor() { }
+ constructor(private calificacionycomentarioService:CalificacionycomentarioService) { }
 
-  ngOnInit() {
-  }
+ calificacionesycomentarios: Calificacionycomentario[];
 
-calificacionesycomentarios: Calificacionycomentario[] = [
-new Calificacionycomentario (1,5,"bien"),
-new Calificacionycomentario(2,1,"mal")];
+getCalificacionesycomentarios(): void{
+this.calificacionycomentarioService.getCalificacionesycomentarios().subscribe(c => this.calificacionesycomentarios = c);
+}
+
+ngOnInit() {
+this.getCalificacionesycomentarios;
+}
+
 
 }

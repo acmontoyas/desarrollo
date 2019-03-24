@@ -1,7 +1,7 @@
 export class Calificacionycomentario {
 
 id: number;
-calificacion: numbre;
+calificacion: number;
 comentario: string;
 
 
