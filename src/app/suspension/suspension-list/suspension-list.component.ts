@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Suspension} from "./suspension";
+import {Suspension} from "../suspension";
 import {SuspensionService} from "../suspension.service";
 
 @Component({

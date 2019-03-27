@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Calificacionycomentario} from "./calificacionycomentario";
+import {Calificacionycomentario} from "../calificacionycomentario";
 import {CalificacionycomentarioService } from "../calificacionycomentario.service";
 
 @Component({
