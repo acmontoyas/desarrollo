@@ -21,7 +21,8 @@
 			<tr *ngFor="let s of suspensiones">
 				<td>{{s.id}}</td>
 				<td style="cursor: pointer;">
-					<a class="figure-caption" [routerLink]="['/suspensiones', { outlets: { 'detail': [s.id] } }]">{{s.vigente}}</a>
+					<a class="figure-caption" routerLink="['/suspensiones', { outlets: { 'detail': [s.id] } }]">
+          {{s.comentarios}}</a>
 				</td>
 			</tr>
 		
@@ -29,5 +30,4 @@
 	</div>
 </body>
 </html>
-  
     
