@@ -1,1 +1,27 @@
 /* Add application styles & imports to this file! */
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+
+#main-container{
+}
+
+table{
+	background-color: white;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead{
+	background-color: #0d071b;
+	border-bottom: solid 5px rgb(30, 9, 124);
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: rgb(197, 160, 38);
+}

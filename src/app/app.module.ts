@@ -6,9 +6,6 @@ import {SuspensionModule} from './suspension/suspension.module';
 import {CocinaModule} from './cocina/cocina.module';
 import {CalificacionycomentarioModule} from './calificacionycomentario/calificacionycomentario.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
- 
- 
-
 import { AppComponent } from './app.component';
 
 
