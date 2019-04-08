@@ -1,19 +1,33 @@
-<div class="container-fluid">
-<div class="col-md-2">
-<table class="table table striped">
-<thead class="thead dark">
-  <tr>
-  <th> Suspension  </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let s of suspensiones">
-  <td>{{s.vigente}} - 
-      {{s.comentarios}} -
-      {{s.numeroDias}} 
-  </td>
-  </tr> 
-  </tbody>
-  </table>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="tabla.css">
+</head>
+<body>
+	<div id="main-container">
+
+		<table>
+			<thead>
+       
+      	<tr>
+					<th>Suspensiones</th>
+        
+				</tr>
+			</thead>
+      <tr>
+					<th>Id</th>
+          
+				</tr>  
+			<tr *ngFor="let s of suspensiones">
+				<td>{{s.id}}</td>
+				<td style="cursor: pointer;">
+					<a class="figure-caption" [routerLink]="['/suspensiones', { outlets: { 'detail': [s.id] } }]">{{s.vigente}}</a>
+				</td>
+			</tr>
+		
+		</table>
+	</div>
+</body>
+</html>
+  
     

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Suspension} from "../suspension";
 import {SuspensionService} from "../suspension.service";
+import{SuspensionDetail} from '../suspension-detail'
 
 @Component({
   selector: 'app-suspension-list',
@@ -11,14 +12,14 @@ export class SuspensionListComponent implements OnInit {
 
 constructor(private suspensionService:SuspensionService) { }
 
-suspensiones: Suspension[];
+suspensiones: SuspensionDetail[];
 
-getSuspensiones(): void{
-this.suspensionService.getSuspensiones().subscribe(susp => this.suspensiones = susp);
+getSuspensionesDetail(): void{
+this.suspensionService.getSuspensionesDetail().subscribe(susp => this.suspensiones = susp);
 }
 
 ngOnInit() {
-  this.getSuspensiones();
+  this.getSuspensionesDetail();
 }
 
 
