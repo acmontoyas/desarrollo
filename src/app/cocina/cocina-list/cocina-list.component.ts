@@ -18,7 +18,7 @@ this.cocinaService.getCocinas().subscribe(c => this.cocinas = c);
 }
 
   ngOnInit() {
-    this.getCocinas;
+    this.getCocinas();
   }
 
 

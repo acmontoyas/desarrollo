@@ -18,7 +18,7 @@ this.calificacionycomentarioService.getCalificacionesycomentarios().subscribe(c 
 }
 
 ngOnInit() {
-this.getCalificacionesycomentarios;
+this.getCalificacionesycomentarios();
 }
 
 
