@@ -15,3 +15,4 @@ import { AppRoutingModule } from '../app-routing/app-routing.module';
   providers: [SuspensionService]
 })
 export class SuspensionModule { }
+

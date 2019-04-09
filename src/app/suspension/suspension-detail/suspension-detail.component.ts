@@ -11,9 +11,24 @@ import { Suspension } from '../suspension';
 })
 export class SuspensionDetailComponent implements OnInit {
 
+
+ /**
+  * The component's constructor
+  * @param suspensionService The suspension's service
+  * @param route The route element which helps to obtain the suspension's id
+  * @param toastrService The toastr to show messages to the user
+  */
   constructor(private suspensionService:SuspensionService, private route:ActivatedRoute) { }
 
+
+ /**
+  * The suspension whose details we want to show
+  */
 suspensionDetail: SuspensionDetail;
+
+ /**
+  * The suspension's id retrieved from the address
+  */
 @Input() suspension_id:number;
 loader:any;
 

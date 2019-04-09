@@ -22,5 +22,4 @@ ngOnInit() {
   this.getSuspensionesDetail();
 }
 
-
 }

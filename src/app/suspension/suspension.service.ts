@@ -14,18 +14,15 @@ export class SuspensionService {
   constructor(private http: HttpClient) { }
 
 
-// getSuspensiones(): Observable<Suspension[]>{
-// return this.http.get<Suspension[]>(API_URL + suspensiones);
-//}
-
-
 
  getSuspensionesDetail():Observable<SuspensionDetail[]>{
     return this.http.get<SuspensionDetail[]>(API_URL+suspensiones);
   }
 
      getSuspensionDetail(suspensionId:number): Observable<SuspensionDetail> {
-      return this.http.get<SuspensionDetail>(API_URL + "data-" + suspensionId+".json");
+      return this.http.get<SuspensionDetail>(API_URL +  "suspension" + suspensionId+".json");
     }
 
 }
+
+

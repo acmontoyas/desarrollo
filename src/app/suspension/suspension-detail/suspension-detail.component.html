@@ -1,6 +1,4 @@
-<p>
-suspension-detail works!
-</p>
+
 <!DOCTYPE html>
 <html lang="eng">
 <head>
@@ -11,10 +9,14 @@ suspension-detail works!
     <table class="table table-striped">
       <thead class="thead-dark">
         <tr>
-          <th>{{suspensionDetail.vigente}}</th>
+          <th>Suspension{{suspensionDetail.id}}</th>
         </tr>
       </thead>
       <tr>
+        <td>Vigente</td>
+        <td>{{suspensionDetail.vigente}}</td>
+      </tr>
+       <tr>
         <td>Comentarios</td>
         <td>{{suspensionDetail.comentarios}}</td>
       </tr>

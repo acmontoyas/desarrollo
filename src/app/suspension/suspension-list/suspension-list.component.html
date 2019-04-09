@@ -19,7 +19,8 @@
           
 				</tr>  
 			<tr *ngFor="let s of suspensiones">
-				<td style="cursor: pointer;">	<a class="figure-caption" routerLink="['/suspensiones', { outlets: { 'detail': [s.id] } }]">
+				<td style="cursor: pointer;">	
+        <a class="figure-caption" [routerLink]="['/suspensiones', { outlets: { 'detail': [s.id] } }]">
           {{s.id}}</a></td>
 			</tr>
 		
