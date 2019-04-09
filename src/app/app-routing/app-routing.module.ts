@@ -5,6 +5,7 @@ import {SuspensionListComponent} from '../suspension/suspension-list/suspension-
 import {CocinaListComponent} from '../cocina/cocina-list/cocina-list.component';
 import {CalificacionycomentarioListComponent} from '../calificacionycomentario/calificacionycomentario-list/calificacionycomentario-list.component';
 import {SuspensionDetailComponent } from '../suspension/suspension-detail/suspension-detail.component';
+import {CocinaDetailComponent } from '../cocina/cocina-detail/cocina-detail.component';
 
 
 const routes: Routes = [
@@ -23,8 +24,22 @@ const routes: Routes = [
                 outlet: 'detail'
             }
         ]
-    }
+  
+    },{
+         path: 'cocinas',
+        children: [
+          {
+              path: 'list',
+              component: CocinaListComponent,
     
+          },
+          {
+              path: ':id',
+              component: CocinaDetailComponent,
+              outlet: 'detail'
+    }] }  
+
+ 
 ];
 
 

@@ -40,8 +40,18 @@ loader:any;
     }
 
 
+onLoad(params){
+    this.cocina_id=parseInt(params['ìd']);
+    this.cocinaDetail =new CocinaDetail();
+    this.getCocinaDetail();
+  }
 
   ngOnInit() {
+    this.loader = this.route.params.subscribe((params:Params) => this.onLoad(params))
   }
+
+    ngOnDestroy() {
+            this.loader.unsubscribe();
+        }
 
 }

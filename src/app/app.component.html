@@ -1,5 +1,4 @@
 <app-suspension-list></app-suspension-list>
-
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active"
@@ -19,6 +18,25 @@
 </div>
 
 
-
 <app-cocina-list></app-cocina-list>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active"
+      routerLink="cocinas/list"
+      routerLinkActive="active">Cocinas</a>
+  </li>
+</ul>
+<div class="container-fluid">
+  <div class="m-5 row">
+    <div class="col">
+        <router-outlet></router-outlet>
+    </div>  
+        <div class="col">
+			<router-outlet name="detail"></router-outlet>
+		</div>
+  </div>  
+</div>
+
+
+
 <app-calificacionycomentario-list></app-calificacionycomentario-list>
