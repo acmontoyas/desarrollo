@@ -35,8 +35,8 @@ loader:any;
 
     getSuspensionDetail(): void {
         this.suspensionService.getSuspensionDetail(this.suspension_id)
-            .subscribe(suspensionDetail => {
-                this.suspensionDetail = suspensionDetail;
+            .subscribe(suspension => {
+                this.suspensionDetail = suspension;
             });
     }
 
