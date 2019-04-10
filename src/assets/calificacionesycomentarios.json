@@ -1,16 +1,29 @@
-[
-  {
-    "id": 1,
-    "calificacion": 4,
-    "comentario": "todo va bien"
-
-  },
-
-  {
-    "id": 2,
-    "calificacion": 3,
-    "comentario": "sin novedades"
-
-  }
- 
-]
+[{
+  "id": 1,
+  "calificacion": 3,
+  "comentario": "LBEL"
+}, {
+  "id": 2,
+  "calificacion": 3,
+  "comentario": "Warfarin Sodium"
+}, {
+  "id": 3,
+  "calificacion": 5,
+  "comentario": "ELF Zit Zapper"
+}, {
+  "id": 4,
+  "calificacion": 1,
+  "comentario": "Headache"
+}, {
+  "id": 5,
+  "calificacion": 2.5,
+  "comentario": "Grama Grass"
+}, {
+  "id": 6,
+  "calificacion": 5,
+  "comentario": "Top Care"
+}, {
+  "id": 7,
+  "calificacion": 4,
+  "comentario": "Medi-First"
+}]
