@@ -25,19 +25,7 @@ const routes: Routes = [
             }
         ]
   
-    },{
-         path: 'cocinas',
-        children: [
-          {
-              path: 'list',
-              component: CocinaListComponent,
-    
-          },
-          {
-              path: ':id',
-              component: CocinaDetailComponent,
-              outlet: 'detail'
-    }] }  
+    }
 
  
 ];

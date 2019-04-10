@@ -1,33 +1,21 @@
 <div class="container-fluid">
 <div class="col-md-2">
 <table class="table table striped">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="tabla.css">
-</head>
-<body>
-	<div id="main-container">
-
-		<table>
-			<thead>
-       
-      	<tr>
-					<th>Cocinas</th>
-        
-				</tr>
-			</thead>
-      <tr>
+<thead class="thead dark">
+  <tr>
+  <th> Cocinas  </th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
 					<th>Id</th>
+          <th>Dirección</th>
           
-				</tr>  
-			<tr *ngFor="let c of cocinas">
-				<td style="cursor: pointer;">	
-        <a class="figure-caption" [routerLink]="['/cocinas', { outlets: { 'detail': [c.id] } }]">
-          {{c.direccion}}</a></td>
-			</tr>
-		
-		</table>
-	</div>
-</body>
-</html>
+				</tr>
+  <tr *ngFor="let c of cocinas">
+  <td> {{c.id}} </td> 
+  <td> {{c.direccion}} </td> 
+  </tr> 
+  </tbody>
+  </table>
+  </div>
