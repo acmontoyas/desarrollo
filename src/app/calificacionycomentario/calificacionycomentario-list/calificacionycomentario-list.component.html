@@ -7,11 +7,16 @@
   </tr>
   </thead>
   <tbody>
+    <tr>
+					<th>Id</th>
+          <th>Calificación</th>
+          <th>Comentarios</th>
+          
+				</tr>
   <tr *ngFor="let c of calificacionesycomentarios">
-  <td> {{c.id}} -
-       {{c.calificacion}} -
-       {{c.comentario}}
-  </td> 
+  <td> {{c.id}} </td> 
+  <td> {{c.calificacion}} </td> 
+  <td> {{c.comentario}} </td> 
   </tr> 
   </tbody>
   </table>

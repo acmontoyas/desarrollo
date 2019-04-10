@@ -1,17 +1,16 @@
 [
   {
     "id": 1,
-    "calificaion": 4,
+    "calificacion": 4,
     "comentario": "todo va bien"
 
   },
 
   {
     "id": 2,
-    "calificaion": 3,
+    "calificacion": 3,
     "comentario": "sin novedades"
 
   }
-
-  
+ 
 ]
