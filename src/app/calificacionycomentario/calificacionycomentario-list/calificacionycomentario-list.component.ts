@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Calificacionycomentario} from "../calificacionycomentario";
 import {CalificacionycomentarioService } from "../calificacionycomentario.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-calificacionycomentario-list',
@@ -9,9 +11,16 @@ import {CalificacionycomentarioService } from "../calificacionycomentario.servic
 })
 export class CalificacionycomentarioListComponent implements OnInit {
 
- constructor(private calificacionycomentarioService:CalificacionycomentarioService) { }
 
- calificacionesycomentarios: Calificacionycomentario[];
+@Input() calificacionesycomentarios: Calificacionycomentario[];
+
+
+/**
+     * Constructor for the component
+     * @param cocinaService The author's services provider
+     */
+constructor(private calificacionycomentarioService:CalificacionycomentarioService, private router: Router) { }
+
 
 getCalificacionesycomentarios(): void{
 this.calificacionycomentarioService.getCalificacionesycomentarios().subscribe(c => this.calificacionesycomentarios = c);
